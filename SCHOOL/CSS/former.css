@@ -1,0 +1,37 @@
+*{
+    background-color: #F8F5F1;
+    
+}
+.headerz{
+    display: flex;
+    justify-content: space-around;
+}
+.logoz{
+    width: 70%;   
+}
+.logout{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+ .summaryz {
+    padding: 4px;
+    width: 200px;
+    background-color: #eeeeee;
+    border: none;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    cursor: pointer;
+  }
+  
+  .logout {
+    background-color: #eeeeee;
+    padding: 4px;
+    margin: 0;
+    box-shadow: 1px 1px 2px #bbbbbb;
+  }
+  .detailsz{
+      display: flex;
+
+width: 20%;
+justify-content: space-between;
+  }
