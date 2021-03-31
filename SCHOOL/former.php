@@ -16,10 +16,19 @@
 <summary class = summaryz>username</summary>
 <a class=logout href="#"> logout</a>
 </details>
-
-
 </div>
 </div>
+<main>
+<div class=header_main>
+ <p class=title_brif>Brifes</p>
+ <a class=title_invt href="#"> Invitation</a>
+ 
+</div>
+
+
+
+
+</main>
 
     
 </body>
