@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="signin.css">
   </head>
   <body>
-  <a href="signup.php"><input class="signupi" type="submit"  nam="insrc"  value="SIGN-UP"></a>
+    <img class="imglogo" src="img/o.png" alt="logo">  
+    <a href="signup.php"><input class="signupi" type="submit"  nam="insrc"  value="SIGN-UP"></a>
 
   <form action="signintrt.php" method="post">
 <div class="login-box">
