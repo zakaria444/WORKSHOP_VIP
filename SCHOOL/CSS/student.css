@@ -4,23 +4,50 @@
 h2{
     color: #387C6D;
     font-family: Monotype Corsiva;
-    width: 3vw;
 }
 header{
 
     display: flex;
     justify-content: space-between;
-    color: #9daac4;
+    align-items: center;
+    height: 4vh;
 
 }
 .navBar{
 
     display: flex;
-    width: 50vw;
+    width: 20vw;
     justify-content: space-between;
+    align-items: center;
+    margin-right: 3vw;
 }
 .username{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    color:#F8F5F1;
     background-color: #343F56;
     height: 4vh;
-    width: 10vw;
+    width: 6vw;
+}
+.fa{
+    font-size: 30px;
+    width: 20px;
+
+}
+.logout{
+    text-decoration: none;
+    color: black;
+}
+summary{
+
+   outline: none;
+}
+.aboutUs{
+
+    text-decoration: none;
+    color: black;
+    font-size:large;
+    
 }
