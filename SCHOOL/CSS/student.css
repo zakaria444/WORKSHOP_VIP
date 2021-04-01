@@ -1,0 +1,20 @@
+*{
+    background-color: #F8F5F1;
+}
+h2{
+    color: #387C6D;
+    font-family: Monotype Corsiva;
+}
+header{
+
+    display: flex;
+    justify-content: space-between;
+
+}
+.navBar{
+
+    display: flex;
+}
+.username{
+    background-color: ;
+}
