@@ -1,3 +1,8 @@
+<?php
+include_once('database.php');
+
+?>
+
 <!DOCTYPE htm
 <html lang="en" dir="ltr">
   <head>
@@ -21,8 +26,6 @@
   <div class="textbox">
     <i class="fas fa-lock"></i>
     <input type="password" name="pswdee" placeholder="Password">
-  </div>
-
   <input type="submit"  name="btn" class="btn" value="Sign in">
 </div>
 </form>
