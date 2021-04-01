@@ -4,17 +4,23 @@
 h2{
     color: #387C6D;
     font-family: Monotype Corsiva;
+    width: 3vw;
 }
 header{
 
     display: flex;
     justify-content: space-between;
+    color: #9daac4;
 
 }
 .navBar{
 
     display: flex;
+    width: 50vw;
+    justify-content: space-between;
 }
 .username{
-    background-color: ;
+    background-color: #343F56;
+    height: 4vh;
+    width: 10vw;
 }
