@@ -27,7 +27,7 @@
 <div class=main_left></div>
 <div class=main_auto>
 
-    <p class=main_p>Invitation</p>
+    <p class=mainp>Invitation</p>
     
     <input class=main_email type="email"  name="email" placeholder="EMAIL">
     <button class=main_butt type="button">Invite</button>
@@ -43,12 +43,25 @@
 
 <div class=main_brief>
 <form class=brief>
-    <p class=main_p>Create your Brief</p>
+    <p class=mainp>Create your Brief</p>
     <div class=input>
     <input class=main_email type="email"  name="email" placeholder="EMAIL">
     <a href="#" class=apload>Apload a file</a>
 </div>
     <button class=main_butt type="button">Invite</button>
+</form>
+</div>
+<div class=main_brief>
+<form class=brief>
+    <p class=mainp>Validation</p>
+    <div class=input>
+    <input class=main_email type="text"  name="email" placeholder="Brief name">
+    <input class=main_email type="text"  name="email" placeholder="Student Username">
+    
+    
+    
+</div>
+    <button class=main_inv type="button">Invite</button>
 </form>
 </div>
 
