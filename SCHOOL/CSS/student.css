@@ -1,10 +1,17 @@
 *{
     background-color: #F8F5F1;
+    width: 0 auto;
+    height: 0 auto;
 }
 h2{
     color: #387C6D;
     font-family: Monotype Corsiva;
 }
+
+
+/* header css */
+
+
 header{
 
     display: flex;
@@ -49,5 +56,22 @@ summary{
     text-decoration: none;
     color: black;
     font-size:large;
+    
+}
+
+/* briefs css */
+
+.biefList{
+     background-color: #E9896A;
+     height: 60vh;
+     width: 60vw;
+}
+.image_BriefName{
+    width: 20vw;
+    height: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
     
 }
