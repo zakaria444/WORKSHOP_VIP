@@ -34,7 +34,7 @@ $con=mysqli_query($link,$chek);
 <div class=main_main>
 
 <div class=main_left>
-<div class="messages container">
+
             <ul>
             <?php
     foreach ($con as $row)
@@ -50,7 +50,7 @@ $con=mysqli_query($link,$chek);
                    
                 
             </ul>
-        </div>
+        
 </div>
 <form class=main_auto action=""  >
     <p class=mainp>Invitation</p>
