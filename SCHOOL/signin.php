@@ -15,12 +15,12 @@ include_once('database.php');
     <img class="imglogo" src="img/o.png" alt="logo">  
     <a href="signup.php"><input class="signupi" type="submit"  nam="insrc"  value="SIGN-UP"></a>
 
-  <form action="signintrt.php" method="post">
+  <form action="signintrt.php" method="POST">
 <div class="login-box">
   <h1>Login</h1>
   <div class="textbox">
     <i class="fas fa-user"></i>
-    <input type="text" name="user" placeholder="Username">
+    <input type="text" name="user" placeholder="email">
   </div>
 
   <div class="textbox">
