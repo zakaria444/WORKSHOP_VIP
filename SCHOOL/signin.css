@@ -7,6 +7,10 @@ body{
   background-color: black;
   background-size:  100% 100%;
 }
+.imglogo{
+  height: 100px;
+  margin :30px;
+}
 .signupi{
   height:   50px;
   width: 100px;
