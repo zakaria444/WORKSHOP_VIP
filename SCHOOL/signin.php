@@ -1,3 +1,8 @@
+<?php
+include_once('database.php');
+
+?>
+
 <!DOCTYPE htm
 <html lang="en" dir="ltr">
   <head>
@@ -10,19 +15,17 @@
     <img class="imglogo" src="img/o.png" alt="logo">  
     <a href="signup.php"><input class="signupi" type="submit"  nam="insrc"  value="SIGN-UP"></a>
 
-  <form action="signintrt.php" method="post">
+  <form action="signintrt.php" method="POST">
 <div class="login-box">
   <h1>Login</h1>
   <div class="textbox">
     <i class="fas fa-user"></i>
-    <input type="text" name="user" placeholder="Username">
+    <input type="text" name="user" placeholder="email">
   </div>
 
   <div class="textbox">
     <i class="fas fa-lock"></i>
     <input type="password" name="pswdee" placeholder="Password">
-  </div>
-
   <input type="submit"  name="btn" class="btn" value="Sign in">
 </div>
 </form>

@@ -1,3 +1,11 @@
+<?php 
+include_once('database.php');
+// $url=$_POST['url'];
+$chek="SELECT * FROM `brief`";
+$con=mysqli_query($link,$chek);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,31 +32,44 @@
  <p class=>Students</p>
 </div>
 <div class=main_main>
-<div class=main_left></div>
-<div class=main_auto>
 
-    <p class=mainp>Invitation</p>
+<div class=main_left>
+<div class="messages container">
+            <ul>
+            <?php
+    foreach ($con as $row)
+    {
+
+    echo $row["name_b"];
     
-    <input class=main_email type="email"  name="email" placeholder="EMAIL">
-    <button class=main_butt type="button">Invite</button>
+    } 
 
 
+    // ?>
 
-
+                   
+                
+            </ul>
+        </div>
 </div>
+<form class=main_auto action=""  >
+    <p class=mainp>Invitation</p>
+    <input class=main_email type="email"  name="email" placeholder="EMAIL">
+    <button class=main_butt type="submit">Invite</button>
+</form>
 <div class=main_right></div>
 
 
 </div>
 
 <div class=main_brief>
-<form class=brief>
+<form class=brief action="connexion.php" method="POST">
     <p class=mainp>Create your Brief</p>
     <div class=input>
-    <input class=main_email type="email"  name="email" placeholder="EMAIL">
+    <input class=main_email type="url"  name="url" placeholder="url">
     <a href="#" class=apload>Apload a file</a>
 </div>
-    <button class=main_butt type="button">Invite</button>
+    <button class=main_butt type="submit">Invite</button>
 </form>
 </div>
 <div class=main_brief>
@@ -61,7 +82,7 @@
     
     
 </div>
-    <button class=main_inv type="button">Invite</button>
+    <button class=main_inv type="submit">Invite</button>
 </form>
 </div>
 

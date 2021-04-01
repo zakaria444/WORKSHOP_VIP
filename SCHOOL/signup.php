@@ -1,3 +1,9 @@
+<?php
+include_once('database.php');
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +16,7 @@
 <body>
     
     <img class="imglogo" src="img/o.png" alt=""> 
-<form action="signuptrt.php" method="post">
+<form action="signuptrt.php" method="POST">
     <h1>Sign Up</h1>
     
     <input type="text"  name="name" placeholder="User Name">
