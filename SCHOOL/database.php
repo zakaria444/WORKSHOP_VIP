@@ -1,7 +1,7 @@
 <?php
 
 // se connecter à MySQL
-$link = mysqli_connect('localhost', 'root', '', 'SCHOOL' );
+$link = mysqli_connect('localhost', 'root', '', 'school' );
 
 // tester la connexion
 if(mysqli_connect_errno()){

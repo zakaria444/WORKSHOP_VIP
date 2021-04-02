@@ -1,11 +1,32 @@
 <?php 
 
-include
+include "database.php" ;
+
+
+
+    if(isset($_POST['sendSolution'])){
+
+       $_POST['sendSolution'];
+
+$briefname =$_POST['briefname'];
+$b_url =$_POST['b_url'];
+
+
+    if(!empty($briefname) && !empty($b_url)){
+
+     $S_insert ="INSERT INTO `solution`(`b_name`,`s_url`)VALUES('$briefname','$b_url')";
+     mysqli_query($link,$S_insert);
+
+    }else{
+        header("location:student.php?msg=enter your brief name and brief URL");
+    }die(!isset($send));
 
 
 
 
 
+
+}
 
 ?>
 
@@ -42,7 +63,6 @@ include
     
                     <h3 class="titles" id="uniqueTitle">Brief</h3>
 
-                <div class="container">
         
                 <div class="biefList">
 
@@ -57,17 +77,17 @@ include
                 </div>
 
 
-                </div>
 
                 <div class="creation">
 
                 <h3 class="titles">Solution Brief</h3>
 
-                    <form action="#" method="post">
+                    <form action="student.php" method="post">
 
-                        <input type="text">
-                        <input type="text">
+                        <input type="text" name="briefname">
+                        <input type="text" name="b_url">
                         <input type="submit" name="sendSolution" value="send solution">
+                        <?php if(isset($_GET['msg'])){  echo $_GET['msg']; } ?>
 
                     </form>
 
@@ -82,7 +102,7 @@ include
 
         </div>
 
-        <h3 class="titles">Validation list</h3>
+        <h3 class="titles" id="Titlevalidation">Validation list</h3>
 
         <div class="validation">
 
