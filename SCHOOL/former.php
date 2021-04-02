@@ -4,6 +4,13 @@ include_once('database.php');
 $chek="SELECT * FROM `brief`";
 $con=mysqli_query($link,$chek);
 
+
+$sele="SELECT * FROM `student`";
+$stude=mysqli_query($link,$sele);
+
+$solution1="SELECT * FROM `solution`";
+$solution=mysqli_query($link,$solution1);
+
 ?>
 
 <!DOCTYPE html>
@@ -34,8 +41,8 @@ $con=mysqli_query($link,$chek);
 <div class=main_main>
 
 <div class=main_left>
-<div class="messages container">
-            <ul>
+
+<ul>
             <?php
     foreach ($con as $row)
     {
@@ -43,14 +50,10 @@ $con=mysqli_query($link,$chek);
     echo $row["name_b"];
     
     } 
-
-
     // ?>
-
-                   
-                
             </ul>
-        </div>
+            
+        
 </div>
 <form class=main_auto action=""  >
     <p class=mainp>Invitation</p>
@@ -60,8 +63,14 @@ $con=mysqli_query($link,$chek);
     <button class=main_butt type="submit">Invite</button>
 </form>
 <div class=main_right></div>
-
-
+            <?php
+    foreach ($stude as $row)
+    {
+    echo $row["name_s"];
+    
+    } 
+    // ?>
+            </ul>
 </div>
 
 <div class=main_brief>
@@ -78,9 +87,24 @@ $con=mysqli_query($link,$chek);
 <div class=main_brief>
 <form class=brief>
     <p class=mainp>Validation</p>
+    <?php
+    foreach ($solution as $row)
+    {
+
+    echo $row["b_name"];
+    echo $row["s_url"];
+    
+    } 
+     ?>
     <div class=input>
-    <input class=main_email type="text"  name="email" placeholder="Brief name">
-    <input class=main_email type="text"  name="email" placeholder="Student Username">
+    
+    <!-- <input class=main_email type="text"  name="email" placeholder="Brief name"> -->
+    <select name="cars"  form="carform">
+  <option >Valide</option>
+  <option >IN valide</option>
+  
+</select>
+   
     
     
     
