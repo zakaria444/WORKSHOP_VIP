@@ -76,7 +76,7 @@ $solution=mysqli_query($link,$solution1);
     <p class=mainp>Create your Brief</p>
     <div class=input>
     <input class=main_email type="url"  name="url" placeholder="url">
-    <a href="#" class=apload>Apload a file</a>
+    <!-- <a href="#" class=apload>Apload a file</a> -->
 </div>
     <button class=main_butt type="submit">Invite</button>
 </form>
