@@ -4,6 +4,10 @@ include_once('database.php');
 $chek="SELECT * FROM `brief`";
 $con=mysqli_query($link,$chek);
 
+
+$sele="SELECT * FROM `student`";
+$stude=mysqli_query($link,$sele);
+
 ?>
 
 <!DOCTYPE html>
@@ -35,7 +39,7 @@ $con=mysqli_query($link,$chek);
 
 <div class=main_left>
 
-            <ul>
+<ul>
             <?php
     foreach ($con as $row)
     {
@@ -50,6 +54,7 @@ $con=mysqli_query($link,$chek);
                    
                 
             </ul>
+            <ul>
         
 </div>
 <form class=main_auto action=""  >
@@ -60,6 +65,20 @@ $con=mysqli_query($link,$chek);
 <div class=main_right></div>
 
 
+            <?php
+    foreach ($stude as $row)
+    {
+
+    echo $row["name_s"];
+    
+    } 
+
+
+    // ?>
+
+                   
+                
+            </ul>
 </div>
 
 <div class=main_brief>
