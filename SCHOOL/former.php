@@ -8,6 +8,9 @@ $con=mysqli_query($link,$chek);
 $sele="SELECT * FROM `student`";
 $stude=mysqli_query($link,$sele);
 
+$solution1="SELECT * FROM `solution`";
+$solution=mysqli_query($link,$solution1);
+
 ?>
 
 <!DOCTYPE html>
@@ -47,14 +50,9 @@ $stude=mysqli_query($link,$sele);
     echo $row["name_b"];
     
     } 
-
-
     // ?>
-
-                   
-                
             </ul>
-            <ul>
+            
         
 </div>
 <form class=main_auto action=""  >
@@ -63,21 +61,13 @@ $stude=mysqli_query($link,$sele);
     <button class=main_butt type="submit">Invite</button>
 </form>
 <div class=main_right></div>
-
-
             <?php
     foreach ($stude as $row)
     {
-
     echo $row["name_s"];
     
     } 
-
-
     // ?>
-
-                   
-                
             </ul>
 </div>
 
@@ -94,9 +84,24 @@ $stude=mysqli_query($link,$sele);
 <div class=main_brief>
 <form class=brief>
     <p class=mainp>Validation</p>
+    <?php
+    foreach ($solution as $row)
+    {
+
+    echo $row["b_name"];
+    echo $row["s_url"];
+    
+    } 
+     ?>
     <div class=input>
-    <input class=main_email type="text"  name="email" placeholder="Brief name">
-    <input class=main_email type="text"  name="email" placeholder="Student Username">
+    
+    <!-- <input class=main_email type="text"  name="email" placeholder="Brief name"> -->
+    <select name="cars"  form="carform">
+  <option >Valide</option>
+  <option >IN valide</option>
+  
+</select>
+   
     
     
     
