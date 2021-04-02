@@ -82,32 +82,66 @@ $solution=mysqli_query($link,$solution1);
 </form>
 </div>
 <div class=main_brief>
-<form class=brief>
-    <p class=mainp>Validation</p>
+
+
+
+<form class="brief" action="validation.php" method="POST">
+    <p class="mainp">Validation</p>
     <?php
     foreach ($solution as $row)
     {
 
     echo $row["b_name"];
     echo $row["s_url"];
-    
+
     } 
      ?>
-    <div class=input>
-    
+    <div class="input">
+
     <!-- <input class=main_email type="text"  name="email" placeholder="Brief name"> -->
-    <select name="cars"  form="carform">
-  <option >Valide</option>
-  <option >IN valide</option>
-  
+    <select name="val">
+    <option name="valide" value="Valide">Valide</option>
+    <option  name="invalide" value="Invalide" >Invalide</option>
 </select>
-   
-    
-    
-    
-</div>
-    <button class=main_inv type="submit">Invite</button>
+    <button class=main_inv type="submit" name="submit">Invite</button>
 </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
 
 
