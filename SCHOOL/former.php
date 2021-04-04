@@ -43,19 +43,18 @@ $solution=mysqli_query($link,$solution1);
 <div class=main_left>
 
 <ul>
-            <?php
-    foreach ($con as $row)
-    {
-
-    echo $row["name_b"];
-    
-    } 
-    // ?>
-            </ul>
+            <?php foreach ($con as $row): ?>
+                <li><?php echo $row['name_b']; ?></li>
+                <a href="trt.php?id_b=<?php echo $row['id_brief'] ?>">Update</a>
+            <?php endforeach; ?>
+            
+            
+</ul>
             
         
 </div>
-<form class=main_auto action=""  >
+
+<form class=main_auto action="#"  >
     <p class=mainp>Invitation</p>
     
     <input class=main_email type="email"  name="email" placeholder="EMAIL">
@@ -108,42 +107,6 @@ $solution=mysqli_query($link,$solution1);
 </select>
     <button class=main_inv type="submit" name="submit">Invite</button>
 </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </div>
 
