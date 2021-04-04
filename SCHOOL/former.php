@@ -45,7 +45,8 @@ $solution=mysqli_query($link,$solution1);
 <ul>
             <?php foreach ($con as $row): ?>
                 <li><?php echo $row['name_b']; ?></li>
-                <a href="trt.php?id_b=<?php echo $row['id_brief'] ?>">Update</a>
+            <a href="trt.php?id_b=<?php echo $row['id_brief'] ?>"
+            >Update</a>
             <?php endforeach; ?>
             
             
