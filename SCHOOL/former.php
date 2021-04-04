@@ -45,7 +45,8 @@ $solution=mysqli_query($link,$solution1);
 <ul>
             <?php foreach ($con as $row): ?>
                 <li><?php echo $row['name_b']; ?></li>
-                <a href="trt.php?id_b=<?php echo $row['id_brief'] ?>">Update</a>
+            <a href="trt.php?id_b=<?php echo $row['id_brief'] ?>"
+            >Update</a>
             <?php endforeach; ?>
             
             
@@ -78,7 +79,7 @@ $solution=mysqli_query($link,$solution1);
     <div class=input>
         <div>  <input  class="nmbrf" type="text" name="nmbrf" placeholder="Name of Brief "></div>
     <input class=main_email type="url"  name="url" placeholder="url">
-    <a href="#" class=apload>Apload a file</a>
+    <!-- <a href="#" class=apload>Apload a file</a> -->
 </div>
     <button class=main_butt type="submit">Invite</button>
 </form>
