@@ -75,6 +75,12 @@ flex-direction: column;
 justify-content: space-around;
 
  }
+ .pd{
+    width: 60%;
+  margin-left: 110px;
+    font-size: 25px;
+    text-align: center;
+ }
  .auto_invt{
      border: springgreen solid;
   margin: auto;
@@ -89,13 +95,16 @@ justify-content: space-around;
      
  }
  
+ 
  .main_email {
     width: 60%;
-    margin-left: 110px;
+    margin-left: 80px;
     font-size: 25px;
     text-align: center;
+    margin-right: 40px;
+}
 
- }
+ 
  .main_butt {
     width: 60%;
     margin-left: 110px;
@@ -119,6 +128,13 @@ justify-content: space-around;
     width: 50%;
     margin: auto;
     background-color: #EAC8AF;}
+    .nmbrf{
+        width: 100%;
+        margin-left: 1px;
+        font-size: 18px;
+        text-align: center;
+        height: 95%;
+    }
     .apload{
        
         font-size: x-large;    

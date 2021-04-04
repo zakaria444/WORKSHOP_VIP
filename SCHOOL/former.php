@@ -43,21 +43,22 @@ $solution=mysqli_query($link,$solution1);
 <div class=main_left>
 
 <ul>
-            <?php
-    foreach ($con as $row)
-    {
-
-    echo $row["name_b"];
-    
-    } 
-    // ?>
-            </ul>
+            <?php foreach ($con as $row): ?>
+                <li><?php echo $row['name_b']; ?></li>
+                <a href="trt.php?id_b=<?php echo $row['id_brief'] ?>">Update</a>
+            <?php endforeach; ?>
+            
+            
+</ul>
             
         
 </div>
-<form class=main_auto action=""  >
+
+<form class=main_auto action="#"  >
     <p class=mainp>Invitation</p>
+    
     <input class=main_email type="email"  name="email" placeholder="EMAIL">
+    <input class="pd" type="password" name="pswd" placeholder="Password">
     <button class=main_butt type="submit">Invite</button>
 </form>
 <div class=main_right></div>
@@ -75,6 +76,7 @@ $solution=mysqli_query($link,$solution1);
 <form class=brief action="connexion.php" method="POST">
     <p class=mainp>Create your Brief</p>
     <div class=input>
+        <div>  <input  class="nmbrf" type="text" name="nmbrf" placeholder="Name of Brief "></div>
     <input class=main_email type="url"  name="url" placeholder="url">
     <!-- <a href="#" class=apload>Apload a file</a> -->
 </div>
@@ -105,42 +107,6 @@ $solution=mysqli_query($link,$solution1);
 </select>
     <button class=main_inv type="submit" name="submit">Invite</button>
 </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </div>
 
