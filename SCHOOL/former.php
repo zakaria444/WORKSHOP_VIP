@@ -55,7 +55,7 @@ $solution=mysqli_query($link,$solution1);
         
 </div>
 
-<form class=main_auto action="#"  >
+<form class=main_auto action="invet.php"  >
     <p class=mainp>Invitation</p>
     
     <input class=main_email type="email"  name="email" placeholder="EMAIL">
@@ -69,8 +69,8 @@ $solution=mysqli_query($link,$solution1);
     echo $row["name_s"];
     
     } 
-    // ?>
-            </ul>
+     ?>
+  </ul>
 </div>
 
 <div class=main_brief>
