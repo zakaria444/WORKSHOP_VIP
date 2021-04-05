@@ -6,11 +6,13 @@ $sele="SELECT `name_b` FROM `brief` WHERE `id_brief`=$id ";
 $quer=mysqli_query($link,$sele);
 $row = mysqli_fetch_assoc($quer);
 
-
+if(isset($_POST['url'])){
 $name=$_POST['url'];
+
 $update="UPDATE `brief` SET `name_b`='$name' WHERE `id_brief`=$id";
 $query=mysqli_query($link,$update);
 
+}
 
 
 ?>
