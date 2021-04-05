@@ -61,57 +61,84 @@ $b_url =$_POST['b_url'];
 
         </header>
     
-                    <h3 class="titles" id="uniqueTitle">Brief</h3>
+            <h3 id="uniqueTitle">Briefs</h3>
 
         
                 <div class="biefList">
 
-                <div class="image_BriefName">
+                    <div class="containerdiv1">
 
-                <i class="fa fa-briefcase" id="iconBrief" aria-hidden="true"></i>
+                    <?php 
 
-                <h4 class="briefName">brief name</h4>
+                        $select1 = "SELECT b_name from brief";
+
+                        $result = mysqli_query($link,$select1);
+
+                        if ($execution_results = mysqli_num_rows($result) > 0) {
+                            
+
+                            while($row = mysqli_fetch_assoc($result)) {
+                                ?>
+                             <tr>
+                                <td><?= $row['id'] ?></td>
+                                
+
+                                
+
+                        
+                            
+                          
+                        
+
+                   
+                    
+                    </div>
+
+                </div>
+
+
+
                 
-                </div>
 
-                </div>
+                
 
+                <form class="creation" action="student.php" method="post">
 
+                        <h3 class="titles" id="Titlesolution">Solution Brief</h3>
 
-                <div class="creation">
+                        <input class="briefname" type="text" name="briefname" placeholder="brief name">
+                        <input class="b_url" type="text" name="b_url" placeholder="brief URL">
+                        <input class="sendSolution" type="submit" name="sendSolution" value="send solution">
+                        <p class="pnotice"><?php if(isset($_GET['msg'])){  echo $_GET['msg']; } ?></p>
 
-                <h3 class="titles">Solution Brief</h3>
-
-                    <form action="student.php" method="post">
-
-                        <input type="text" name="briefname">
-                        <input type="text" name="b_url">
-                        <input type="submit" name="sendSolution" value="send solution">
-                        <?php if(isset($_GET['msg'])){  echo $_GET['msg']; } ?>
-
-                    </form>
+                </form>
 
 
 
 
-                </div>
+                
 
 
 
 
 
-        </div>
+        
 
-        <h3 class="titles" id="Titlevalidation">Validation list</h3>
+        <h3 class="titles" id="titlevalidation">Validation list</h3>
 
         <div class="validation">
 
-                <div>
-                    <img src="" alt="">
+            <div class="containerdiv2" >
+
+                <div class="image_BriefName2">
+
+                    <i class="fa fa-briefcase" id="iconBrief" aria-hidden="true"></i>
+                    
                     <h4 class="briefName">brief name</h4>
+
                 </div>
 
-
+            </div>
 
 
         </div>
