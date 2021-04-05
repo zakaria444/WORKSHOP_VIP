@@ -36,7 +36,7 @@ $solution=mysqli_query($link,$solution1);
 <main>
 <div class=header_main>
  <p class=title_brif>Brifes</p>
- <p class=>Students</p>
+ <p class=title_brif>Students</p>
 </div>
 <div class=main_main>
 
@@ -55,7 +55,7 @@ $solution=mysqli_query($link,$solution1);
         
 </div>
 
-<form class=main_auto action="#"  >
+<form class=main_auto action="invet.php"  >
     <p class=mainp>Invitation</p>
     
     <input class=main_email type="email"  name="email" placeholder="EMAIL">
@@ -91,8 +91,8 @@ $solution=mysqli_query($link,$solution1);
 <form class="brief" action="validation.php" method="POST">
     <p class="mainp">Validation</p>
     <?php
-    foreach ($solution as $row)
-    {
+    foreach ($solution as $row) {
+   
 
     echo $row["b_name"];
     echo $row["s_url"];
