@@ -55,7 +55,7 @@ $solution=mysqli_query($link,$solution1);
         
 </div>
 
-<form class=main_auto action="invet.php"  >
+<form class=main_auto action="invet.php"  method="POST" >
     <p class=mainp>Invitation</p>
     
     <input class=main_email type="email"  name="email" placeholder="EMAIL">
