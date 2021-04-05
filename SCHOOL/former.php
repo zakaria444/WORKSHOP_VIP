@@ -69,8 +69,8 @@ $solution=mysqli_query($link,$solution1);
     echo $row["name_s"];
     
     } 
-    // ?>
-            </ul>
+     ?>
+  </ul>
 </div>
 
 <div class=main_brief>
